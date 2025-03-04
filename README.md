@@ -13,7 +13,7 @@ This program consists of the following functions
     associated value for the glyph within the given radix
 
     - Ex: The character B will be returned as 11
-    (`B` - `A` + `10`) = (`66` - `65` + `10`) = `11`
+    (B - A + 10) = (66 - 65 + 10) = 11
 
 1. `nextInt(int radix)`
     - This method will call `glyph2int` for every char
