@@ -14,12 +14,13 @@ This program consists of the following functions
         - Ex: The character B will be returned as 11
         (`B` - `A` + `10`) = (`66` - `65` + `10`) = `11`
 
-    2. `nextInt(int radix)`
+    1. `nextInt(int radix)`
         - This method will call `glyph2int` for every char
         in the array until EOF.
 
         - The following algorithm will be applied to properly
         sum the values, given the radix, into a final base 10 number.
+
         ```c
         while (digit != -1)
         {
