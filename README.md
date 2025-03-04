@@ -7,25 +7,26 @@ the equivalent number in base 10. For example, with the radix `16`, the string `
 ## Components:
 
 This program consists of the following functions
-    1. `glyph2int(char glyph, int radix)`
-        - This function reads a single ASCII character and returns the
-        associated value for the glyph within the given radix
 
-        - Ex: The character B will be returned as 11
-        (`B` - `A` + `10`) = (`66` - `65` + `10`) = `11`
+1. `glyph2int(char glyph, int radix)`
+    - This function reads a single ASCII character and returns the
+    associated value for the glyph within the given radix
 
-    1. `nextInt(int radix)`
-        - This method will call `glyph2int` for every char
-        in the array until EOF.
+    - Ex: The character B will be returned as 11
+    (`B` - `A` + `10`) = (`66` - `65` + `10`) = `11`
 
-        - The following algorithm will be applied to properly
-        sum the values, given the radix, into a final base 10 number.
+1. `nextInt(int radix)`
+    - This method will call `glyph2int` for every char
+    in the array until EOF.
 
-        ```c
-        while (digit != -1)
-        {
-            number = (number * radix) + digit;
-            count++;
-            digit = glyph2int(buffer[count], radix);
-        }
-        ```
+    - The following algorithm will be applied to properly
+    sum the values, given the radix, into a final base 10 number.
+
+    ```c
+    while (digit != -1)
+    {
+        number = (number * radix) + digit;
+        count++;
+        digit = glyph2int(buffer[count], radix);
+    }
+    ```
