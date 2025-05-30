@@ -60,7 +60,7 @@ int nextInt(int radix)
     return number;
 }
 
-int main()
+int main(void)
 {
     int radix;
     char buffer[256];
